@@ -1,0 +1,20 @@
+Sub Exercicio21()
+    Dim n1, n2, n3, n4, M As Double
+    n1 = InputBox(Prompt:="Insira o valor da nota 1: ")
+    n2 = InputBox(Prompt:="Insira o valor da nota 2: ")
+    n3 = InputBox(Prompt:="Insira o valor da nota 3: ")
+    n4 = InputBox(Prompt:="Insira o valor da nota 4: ")
+    M = (n1 + n2 + n3 + n4) / 4      
+    If M > 6 Or M = 6 Then
+        MsgBox Prompt:="APROVADO"
+        MsgBox Prompt:="Sua média foi: " & M
+    Else
+        If M > 3 Or M = 3 Then
+            MsgBox Prompt:="EXAME"
+            MsgBox Prompt:="Sua média foi: " & M
+        Else
+            MsgBox Prompt:="REPROVADO"
+            MsgBox Prompt:="Sua média foi: " & M
+        End If
+    End If
+End Sub
