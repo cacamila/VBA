@@ -1,0 +1,44 @@
+Sub CargoBonus()
+    Dim Cargo As Integer
+    Dim Salario As Double
+    Dim Bonus As Double
+    
+    MsgBox Prompt:="Descubra quanto você receberá de bônus!!"
+    Cargo = InputBox(Prompt:=" Insira 1 para TI, 2 para RH, 3 para ENG, 4 ADM e 5 SEG: ")
+    
+    Select Case Cargo
+   Case Is = 1
+      MsgBox "O Cargo escolhido foi TI"
+      Salario = InputBox(Prompt:="Insira seu salário: ")
+      Bonus = Salario + (Salario * 0.05)
+      MsgBox Prompt:="Seu bônus foi de: " & Bonus
+      
+   Case Is = 2
+      MsgBox "O Cargo escolhido foi Recursos Humanos"
+      Salario = InputBox(Prompt:="Insira seu salário: ")
+      Bonus = Salario + (Salario * 0.04)
+      MsgBox Prompt:="Seu bônus foi de: " & Bonus
+      
+   Case Is = 3
+      MsgBox "O Cargo escolhido foi Engenharia"
+      Salario = InputBox(Prompt:="Insira seu salário: ")
+      Bonus = Salario + (Salario * 0.1)
+      MsgBox Prompt:="Seu bônus foi de: " & Bonus
+      
+   Case Is = 4
+      MsgBox "O Cargo escolhido foi Administração"
+      Salario = InputBox(Prompt:="Insira seu salário: ")
+      Bonus = Salario + (Salario * 0.07)
+      MsgBox Prompt:="Seu bônus foi de: " & Bonus
+      
+   Case Is = 5
+      MsgBox "O Cargo escolhido foi Segurança"
+      Salario = InputBox(Prompt:="Insira seu salário: ")
+      Bonus = Salario + (Salario * 0.06)
+      MsgBox Prompt:="Seu bônus foi de: " & Bonus
+      
+   Case Else
+      MsgBox "Não existe esse cargo, reinicie o processo."
+End Select
+    
+End Sub
