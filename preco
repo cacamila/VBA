@@ -1,0 +1,22 @@
+Sub Exercico28()
+    Dim VM, PA, PN As Double     
+    PA = InputBox(Prompt:="Insira o preço atual: ")
+    VM = InputBox(Prompt:="Insira a venda mensal: ")
+    If PA > 30 Then
+    PN = PA + (PA * 0.1)
+    MsgBox Prompt:="O novo preço é: " & PN
+    Else
+        If PA >= 30 And PA < 80 Then
+        PN = PA + (PA * 0.15)
+        MsgBox Prompt:="O novo preço é: " & PN
+        Else
+            If PA >= 80 Then
+            PN = PA + (PA * 0.05)
+            MsgBox Prompt:="O novo preço é: " & PN
+            Else
+            PA = PN
+            MsgBox Prompt:="O novo preço é:" & PN
+            End If
+        End If
+    End If
+End Sub
